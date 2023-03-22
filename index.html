@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build a Borngus</title>
+    <script src="https://kit.fontawesome.com/6e25eeff3f.js" crossorigin="anonymous"></script>
+    <link rel="https://fonts.google.com/specimen/Homemade+Apple?query=Homemade+Apple" rel="stylesheet">
+    <link rel="https://fonts.google.com/specimen/Nanum+Brush+Script?query=nanum" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Homemade+Apple&family=Nanum+Brush+Script&family=Rubik+Dirt&display=swap" rel="stylesheet">
+
+    <style>
+        body{
+            margin:0;
+            height:100vh;
+            background-image:linear-gradient(red,orange);
+        }
+        fieldset{
+            border-radius:25px;
+            border:5px solid black;
+            margin:auto;
+        }
+        legend{
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            font-size:20px;
+        }
+
+
+        input{
+            background-color:beige;
+            border-color:brown;
+            border-radius:8px; 
+        }
+        textarea{
+            resize: none;
+            background-color:beige;
+            border-color:brown;
+            border-radius:8px; 
+        }
+        select{
+            background-color:beige;
+            border-color:brown;
+        }
+        button{
+            background-color:beige;
+            border-color:brown;
+        }
+        output{
+            font-family:'Nanum Brush Script';
+            font-weight:bolder;
+        }
+
+
+        
+        h2{
+        text-align:center;
+        font-size:30px;
+        }
+        p{
+        display:flex;
+        font-size:2px;
+        margin-right:250px; 
+        color:rgb(180, 115, 11);
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+
+
+        #Build{
+            display:"flex";
+        }
+
+        #Title{
+            font-size:50px;
+        }
+
+        #BuildForm{
+            border-width:5px;
+            border-radius:8px;
+        }
+        #name{
+            font-family: 'Homemade Apple', cursive;
+            font-weight:bolder;
+            letter-spacing:2px;
+            word-spacing: 5%;
+            text-align:center;
+        }
+        #NP{
+            display:flex;
+            justify-content: space-around;
+        }
+        #add{
+            border-radius:8px;
+        }
+
+        #Info{
+            width:60%;
+
+        }
+
+        #endBtns{
+            width:fit-content;
+            margin:auto;
+        }
+
+
+    </style>
+</head>
+<body>
+    <br><br><br>
+    <h2 id="Title">Order Your Borngus™</h2>
+
+    <form id="Build">
+        <br><br><br>
+                <fieldset id="Info">
+                <legend id="payInfo">Payment Information</legend>
+                    <label for="nameF" id="A">First Name</label>
+                    <input type="text" id="nameF" size="25" placeholder="Wackus Bonkus" pattern="^\D+ \D+$" required>
+                    <label for="nameL" id="A">Last Name</label>
+                    <input type="text" id="nameL" size="25" placeholder="Wackus Bonkus" pattern="^\D+ \D+$" required>
+
+                    <br><br>
+
+                    <label for="add" id="Addr">Address:</label>
+                    <input type="text" id="add" placeholder="Address" pattern="^(\d{4}) [A-Z0-9]*\s[A-Z0-9]*\s[A-Z0-9]*\s[A-Z]*,\s[A-Z]{2}\s(\d{5})$" required>
+                    <label for="add">City:</label>
+                    <input type="text" id="add" placeholder="City" pattern="^\[A-Z]+$" required>
+                    <label for="add">State:</label>
+                    <input type="text" id="add" placeholder="State" pattern="^\[a-zA-Z]+$" required>
+                    <label for="add">Zip Code:</label>
+                    <input type="text" id="add" placeholder="12345" pattern="^\d{5}$" required>
+
+
+                    <br><br>
+
+                    <label for="card">Credit Card Number</label>
+                    <input type="text" id="card" placeholder="•••• •••• •••• ••••" pattern="^(\d{4}) (\d{4}) (\d{4}) (\d{4})$" required>
+
+                    <label for="secure">Security Code</label>
+                    <input type="text" id="secure" placeholder="CVC" pattern="^\d{3}$" required>
+
+                    <label for="Method">Payment method</label>
+                    <select id="Method" required>
+                    <option>Visa</option>
+                    <option>Mastercard</option>
+                    <option>Discover</option>
+                    <option>Souls of the innocent</option>
+                    <option>American Express</option>
+                    </select>
+
+                    <br><br>
+
+                    <label for="Email">Enter your Email:</label>
+                    <input type="text" id="Email" placeholder="Name@gmail.com" pattern="^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$" required> <br/> <br/>
+
+                    <br><br>
+
+                    <label for="ques">At what angle is your house oriented in relation to the Capital of Detroit?</label>
+                    <input type="text" id="ques" required> <br/> <br/>
+
+                    <br><br>
+
+                    <label for="agree" id="Ag">I understand that I am now liable for the maintenance and nurturing of my Borngus™ and am liable for any tomfoolery which it may partake in at any moment whenever it so pleases.</label>
+                    <input type="checkbox" id="agree" required>
+                    
+                    <h3>DISCLAIMER:</h3><p> We are not responsible for any and all forms of mischievous "games" performed by your Borngus™, including sudden reality destabilization/restructuring events brought on my said Borngus™, tax evasion, vehicular manslaughter, plotting to overthrow the Danish Government, stabbing of random people(including yourself), sudden loss of limbs and/or organs upon acquiring your Borngus™, ancient Eldritch gods being summoned within your living room, having your mind enslaved by the Sun itself, being forced to sacrifice your first born child to your Borngus™, or any other forms of destructive and/or maniacal skallywaggery. This gremlin is your child now and you will be held responsible for its crimes against humanity if and/or when they are committed.</p>
+            </fieldset>
+
+        </fieldset> <br/>
+        <div id="endBtns">
+            <input type="submit" class="end" id="sub" value="Submit form">
+            <input type="reset" class="end" id="clr" value="Clear">
+        </div>
+        
+    </form>
+</body>
+</html>
